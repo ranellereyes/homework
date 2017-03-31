@@ -60,4 +60,8 @@ class Map
   def show
 
   end
+
+  def keys
+    @map.map { |(k, v)| k }
+  end
 end
