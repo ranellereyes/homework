@@ -26,14 +26,14 @@ class Queue
   end
 
   def enqueue(el)
-
+    @queue.unshift(el)
   end
 
   def dequeue
-
+    @queue.shift
   end
 
   def show
-
+    @queue
   end
 end
