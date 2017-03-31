@@ -46,21 +46,25 @@ class Map
   end
 
   def assign(k, v)
-    index = keys.index(k)
-    index ? @map[index] = [k, v] : @map.push([k, v])
+    find(k) ? @map[find(k)] = [k, v] : @map.push([k, v])
   end
 
   def lookup(k)
-    index = keys.index(k)
-    index.nil? ? nil : @map[index].last
+    find(k).nil? ? nil : @map[find(k)].last
   end
 
   def remove(k)
-
+    find(k).nil? ? nil : @map.delete_at(find(k))
   end
 
   def show
     @map
+  end
+
+  private
+
+  def find(k)
+    keys.index(k)
   end
 
   def keys
