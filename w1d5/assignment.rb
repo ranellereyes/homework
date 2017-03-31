@@ -46,7 +46,8 @@ class Map
   end
 
   def assign(k, v)
-
+    index = keys.index(k)
+    index ? @map[index] = [k, v] : @map.push([k, v])
   end
 
   def lookup(k)
@@ -58,7 +59,7 @@ class Map
   end
 
   def show
-
+    @map
   end
 
   def keys
