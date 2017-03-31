@@ -51,7 +51,8 @@ class Map
   end
 
   def lookup(k)
-
+    index = keys.index(k)
+    index.nil? ? nil : @map[index].last
   end
 
   def remove(k)
