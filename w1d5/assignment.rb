@@ -11,7 +11,6 @@ class Stack
 
   def remove
     @stack.push
-    @stack
   end
 
   def show
