@@ -17,3 +17,23 @@ class Stack
     @stack
   end
 end
+
+class Queue
+  attr_accessor :queue
+
+  def initialize
+    @queue = []
+  end
+
+  def enqueue(el)
+
+  end
+
+  def dequeue
+
+  end
+
+  def show
+
+  end
+end
