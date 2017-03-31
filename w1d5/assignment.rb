@@ -6,11 +6,12 @@ class Stack
   end
 
   def add(el)
-    # adds an element to the stack
+    @stack << el
   end
 
   def remove
-    # removes one element from the stack
+    @stack.push
+    @stack
   end
 
   def show
