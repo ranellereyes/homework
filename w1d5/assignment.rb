@@ -37,3 +37,27 @@ class Queue
     @queue
   end
 end
+
+class Map
+  attr_accessor :map
+
+  def initialize
+    @map = []
+  end
+
+  def assign(k, v)
+
+  end
+
+  def lookup(k)
+
+  end
+
+  def remove(k)
+
+  end
+
+  def show
+
+  end
+end
